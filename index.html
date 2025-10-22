@@ -1,0 +1,27 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f172a"/>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/icons/icon-192.png">
+    <title>Montego</title>
+    <style>
+      html, body, #root { height: 100%; margin: 0; }
+      .topbar { position: fixed; top: 0; left: 0; right: 0; display: flex; gap: 8px; align-items: center; padding: 10px 12px; background: rgba(255,255,255,0.9); backdrop-filter: blur(6px); z-index: 1000; border-bottom: 1px solid #eee; }
+      .spacer { height: 58px; }
+      .btn { padding: 8px 12px; border-radius: 8px; border: 1px solid #ddd; background: #0f172a; color: #fff; cursor: pointer; }
+      .btn.secondary { background: #fff; color: #0f172a; }
+      .group { display: inline-flex; align-items: center; gap: 6px; }
+      .input { padding: 8px 10px; border: 1px solid #ddd; border-radius: 8px; }
+      .card { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 10px; }
+      .panel { position: fixed; right: 12px; top: 70px; width: 300px; max-width: 90vw; z-index: 1000; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
